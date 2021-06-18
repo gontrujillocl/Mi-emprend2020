@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  background: #ffaf6d;
+  font-family: "Poppins", sans-serif;
+  padding: 0.4rem 0.5rem 0.3rem;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #ffffff;
+}
+
+.input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.input:focus {
+  background: #ffaf6d;
+  outline: none;
+}
+
+.article {
+  border: 1px dotted #060606;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.article:last-child {
+  margin-bottom: 0;
+}
+.article__title {
+  font-size: 20px;
+  padding: 0.4rem 0;
+}
+.article__text {
+  text-align: justify;
+}
+.article__instructor {
+  padding: 0.4rem 0;
+}
+.article__social span {
+  font-size: 14px;
+  margin-right: 0.6rem;
+}
+
+.nav {
+  position: relative;
+  background: #000000;
+}
+.nav__brand {
+  position: absolute;
+  top: 9.5px;
+  left: 1rem;
+}
+.nav__logo {
+  width: 48px;
+  height: 48px;
+}
+.nav__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #000000;
+}
+.nav__list {
+  list-style-type: none;
+}
+.nav__item a {
+  display: block;
+  text-align: left;
+  padding: 0.8em;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav__item a:hover {
+  color: #ffaf6d;
+}
+.nav__collapsible {
+  text-align: right;
+}
+.nav__collapsible label {
+  display: block;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.3rem;
+}
+.nav__collapsible i {
+  color: #ffffff;
+}
+.nav__collapsible i:hover {
+  color: #ffaf6d;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .nav__container {
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 576px) {
+  .nav__collapsible label {
+    display: none;
+  }
+
+  .nav__container {
+    max-height: 100%;
+    padding: 0.6rem 1.8rem;
+    overflow: visible;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.header {
+  background-image: url("../img/desarrolloweb2021t.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 32vh;
+}
+
+.main {
+  padding: 0.5rem;
+}
+.main__left {
+  margin-bottom: 0.5rem;
+  border: 1px solid #060606;
+}
+.main__right {
+  border: 1px solid #060606;
+}
+.main__content {
+  padding: 1rem;
+  display: grid;
+  justify-items: center;
+}
+.main__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #060606;
+  margin-bottom: 0.7rem;
+}
+.main__title {
+  text-transform: uppercase;
+}
+.main ul {
+  list-style: circle;
+  list-style-position: inside;
+}
+.main__social {
+  padding: 0.7rem;
+}
+.main__social i {
+  margin: 0 0.5rem;
+}
+.main__text {
+  text-align: justify;
+}
+.main__box {
+  background: #808080;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 0;
+  margin: 0.6rem 0;
+}
+.main__courses {
+  justify-self: flex-start;
+  margin-bottom: 1rem;
+}
+
+#svg-animation {
+  position: relative;
+}
+
+#code-animation {
+  animation-name: code-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes code-animation {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(150px);
+  }
+}
+#whell-animation {
+  position: absolute;
+  animation-name: whell-animation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 79% 80%;
+}
+
+@keyframes whell-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+  }
+  .main__left {
+    margin-bottom: 0;
+  }
+}
+.footer {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+.footer__links a {
+  color: #ffffff;
+}
+.footer__links a:hover {
+  color: #ffaf6d;
+}
+.footer__link {
+  display: block;
+  margin: 0.8rem auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer__copy {
+    display: flex;
+    align-items: center;
+  }
+  .footer__links {
+    display: flex;
+    align-items: center;
+  }
+  .footer__link {
+    margin: 0 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
